@@ -1,4 +1,5 @@
-﻿<!doctype html>
+<?php include("config.php");?>
+<!doctype html>
 <html lang="en">
 <head>
 
@@ -42,13 +43,7 @@
 </head>
 <!-- add alt tags to each <img src="#" alt="helps search engines find you"/>  -->
 <body data-spy="scroll" data-target="#myNavbar">
-    <div id="myNavbar">
-            <script>
-                    $.get("navbar.html", function(data){
-                       $("#myNavbar").replaceWith(data);
-                   });
-                       </script>
-    </div>
+    <?php include("navbar.php");?>
     <div class="container p-4" style="padding-top:3.5rem !important">
         <section class="my-4 px-3 pt-3">
             <h2 class="text-center font-weight-bold fancy mb-4"><span class="px-3">DAILY SPECIALS</span></h2>
@@ -119,13 +114,7 @@
         </section>
 
     </div>
-    <div id="myfooter">
-            <script>
-                    $.get("footer.html", function(data){
-                      $("#myfooter").replaceWith(data);
-                  });
-                      </script>
-    </div>
+    <?php include("footer.php");?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
